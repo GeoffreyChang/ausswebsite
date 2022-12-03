@@ -1,6 +1,6 @@
 /* STYLES STUFF */
 :root {
-    --blue: #377dff;
+    --blue: #3399ff;
     --darkblue: #1d6cff;
     --white: #ffffff;
     --black: #000;
@@ -10,7 +10,7 @@
 
 body {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    background: #3399ff;
+    background: var(--blue);
     margin: 0;
     padding: 0;
 }
@@ -278,6 +278,10 @@ body {
     /* background-color: var(--white); */
 }
 
+.homepage h1 {
+    color: var(--white);
+}
+
 /* SOCIAL MEDIA BUTTONS START */
 @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
 
@@ -334,7 +338,7 @@ body {
 }
 
 .social-btns {
-    height: 90px;
+    height: 10px;
     margin: auto;
     font-size: 0;
     text-align: center;
@@ -346,11 +350,12 @@ body {
 }
 
 .social-btns .btn {
+    --button-size: 90px;
     display: inline-block;
     background-color: #fff;
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
+    width: var(--button-size);
+    height: var(--button-size);
+    line-height: var(--button-size);
     margin: 0 10px;
     text-align: center;
     position: relative;
