@@ -5,14 +5,29 @@
     --white: #ffffff;
     --black: #000;
     --invis: rgba(255, 255, 255, 0);
+    --button-border: 20%;
 }
 
 
 body {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    background: var(--blue);
+    /* background: var(--blue); */
     margin: 0;
     padding: 0;
+    background-image: url('/images/img1.JPG');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.overlay {
+    z-index: -99;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 162, 255, 0.545); /*can be anything, of course*/
 }
 
 /* NAVBAR START */
@@ -274,12 +289,30 @@ body {
 /* ABOUT CONTENT START */
 
 .homepage {
-    padding: 10px;
+    /* padding: 10px; */
     /* background-color: var(--white); */
+    margin-left: 100px;
+    text-align: left;
 }
 
 .homepage h1 {
     color: var(--white);
+    text-transform: uppercase;
+    font-size: 5rem;
+    /* font-family: 'Courier New', monospace; */
+}
+
+.homepage hr {
+    margin-top: -50px;
+    width: 50%;
+    size: 10px;
+    margin-left: 0;
+}
+
+.homepage p {
+    color: white;
+    font-size: 2rem;
+    font-family: MS Sans Serif, sans-serif;
 }
 
 /* SOCIAL MEDIA BUTTONS START */
@@ -339,18 +372,18 @@ body {
 
 .social-btns {
     height: 10px;
-    margin: auto;
+    /* margin: auto; */
     font-size: 0;
-    text-align: center;
-    position: absolute;
+    /* text-align: center; */
+    /* position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 
 .social-btns .btn {
-    --button-size: 90px;
+    --button-size: 50px; /* 90px before */
     display: inline-block;
     background-color: #fff;
     width: var(--button-size);
@@ -360,7 +393,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
-    border-radius: 28%;
+    border-radius: var(--button-border);
     box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
     opacity: 0.99;
 }
@@ -374,7 +407,7 @@ body {
 }
 
 .social-btns .btn .fa {
-    font-size: 38px;
+    font-size: 28px; /* 38px before */
     vertical-align: middle;
 }
 
