@@ -301,7 +301,7 @@ body {
     color: var(--white);
     text-transform: uppercase;
     font-size: 5rem;
-    /* font-family: 'Courier New', monospace; */
+    font-family: sans-serif;
 }
 
 .homepage hr {
@@ -315,7 +315,7 @@ body {
 .homepage p {
     color: white;
     font-size: 2rem;
-    font-family: MS Sans Serif, sans-serif;
+    font-family: sans-serif;
 }
 
 /* SOCIAL MEDIA BUTTONS START */
