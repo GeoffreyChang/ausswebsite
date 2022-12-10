@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <script src="https://kit.fontawesome.com/3e0c2a4e76.js" crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+    
     <title>About AUSS</title>
 </head>
+
 <body>
     <div class="overlay"></div>
     <div class="navbar">
@@ -25,5 +27,66 @@
             <li class="logo"><img src="/images/AUSS.png"></li>
         </ul>
     </div>
+
+    <div class="about_container">
+        <h1>About AUSS</h1>
+        <p>AUSS is the #1 health and fitness club here at UoA.
+            For $20, you get free access to fantastic events such as weekly training nights,
+            discount codes for supps and gear, training workshops and seminars, as well as a free t-shirt for your
+            perfect pump cover!</p>
+        <hr>
+        <br>
+        <div class="about_content">
+            <div class="card" onclick="changeBackground(0)">
+                <img src="/images/t-shirts-icon.png" alt="shirt">
+                <div class="container">
+                    <h4><strong>Free Shirt</strong></h4>
+                    <p>Recieve a free AUSS shirt when you sign up!</p>
+                </div>
+            </div>
+            <div class="card" onclick="changeBackground(1)">
+                <img src="/images/woman-icon.png" alt="woman">
+                <div class="container">
+                    <h4><strong>Woman's Night</strong></h4>
+                    <p>Woman's nights dedicated towards females.
+                        A comfortable environment perfect for any level. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/tree-plant-icon.png" alt="sprout">
+                <div class="container">
+                    <h4><strong>Beginner's Night</strong></h4>
+                    <p>Beginner-friendly events where
+                        everybody can learn and share gym knowledge. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/gym-dumbbell-icon.png" alt="dumbbell">
+                <div class="container">
+                    <h4><strong>Training Night</strong></h4>
+                    <p>Training nights every fortnight. Come lift and hang out with us! </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/calendar-icon.png" alt="calendar">
+                <div class="container">
+                    <h4><strong>Events</strong></h4>
+                    <p>We have various exciting events planned
+                         throughout the year. Training nights, collaborations and more! </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/puzzle-icon.png" alt="puzzle">
+                <div class="container">
+                    <h4><strong>Sponsors</strong></h4>
+                    <p>Our fantastic line-up of sponsors for 2023 support our events and enables many member benefits,
+                         such as discount codes and amazing giveaways!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/script.js"></script>
 </body>
+
 </html>
