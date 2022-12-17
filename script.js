@@ -4,3 +4,7 @@ var images = ["/images/sponsors.jpg", "/images/beginner.jpg", "/images/events.jp
 function changeBackground(n) {
     document.body.style.backgroundImage = "url(" + images[n] + ")";
 }
+
+
+
+

@@ -185,8 +185,8 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     background-image: linear-gradient(to right,
-            #6b0ffff5,
-            rgba(255, 255, 255, 0.336) 50%,
+            #9e61ff,
+            rgb(119, 0, 255) 50%,
             rgb(255, 255, 255) 50%);
     background-size: 200% 100%;
     background-position: -100%;
@@ -966,3 +966,76 @@ body {
 
 
 /* EVENTS PAGE END */
+
+
+/* TRAINING NIGHT PAGE START */
+.training_page_words h1 {
+    color: var(--text_color);
+    margin: 0%;
+    text-align: right;
+    width: 91%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.training_page_paragraph p {
+    color: var(--text_color);
+    margin: 2%;
+    text-align: right;
+    width: 70%;
+    font-size: 1vw;
+}
+
+.training_page {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    position: absolute;
+    bottom: 27%;
+  }
+  .training_page body {
+    width: 100%;
+    height: 100vh;
+    background-color:#000;
+    
+    display:grid;
+    place-items:center;
+
+  }
+  .training_page img {
+    width: 30%;
+    height: 100%;
+    object-fit:cover;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+    
+  }
+  .training_page {
+    /* max-width:600px;
+    max-height:350px; */
+    max-width:1200px;
+    max-height:1200px;
+    
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    
+  }
+  .training_page:hover img {
+    opacity:0.3;
+  }
+  .training_page img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+
+
+
+
+/* TRAINING NIGHT PAGE END */
