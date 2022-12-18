@@ -416,12 +416,9 @@ body {
     margin-left: 100px;
     margin-top: 150px;
     text-align: left;
-    -moz-animation: fadein 2s;
-    /* Firefox */
+    /* -moz-animation: fadein 2s;
     -webkit-animation: fadein 2s;
-    /* Safari and Chrome */
-    -o-animation: fadein 2s;
-    /* Opera */
+    -o-animation: fadein 2s; */
 }
 
 .homepage h1 {
@@ -780,7 +777,7 @@ body {
 }
 
 .about_content .card:hover {
-    filter: drop-shadow(10px 5px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(10px 5px 4px rgba(255, 255, 255, 0.3));
     cursor: pointer;
     background-position: 0px 0px;
 }
